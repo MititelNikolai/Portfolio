@@ -75,9 +75,13 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
+    padding-top: 3.5rem;
   }
   .header__socials,
   .scroll_down {
     display: none;
+  }
+  .header__container .me {
+    margin-top: 2.5rem;
   }
 }
