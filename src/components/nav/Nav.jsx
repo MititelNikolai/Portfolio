@@ -5,10 +5,10 @@ import { BiMessageSquareDetail } from 'react-icons/bi'
 import './nav.css'
 import { useState } from 'react'
 const Nav = () => {
-  const [activNav, setActiveNav] = useState('#')
+  const [activNav, setActiveNav] = useState('#home')
   return (
     <nav>
-      <a href="/" onClick={() => setActiveNav('#')} className={activNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#home" onClick={() => setActiveNav('#home')} className={activNav === '#home' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#about" onClick={() => setActiveNav('#about')} className={activNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href="#experience" onClick={() => setActiveNav('#experience')} className={activNav === '#experience' ? 'active' : ''}><AiOutlineBook /></a>
       <a href="#services" onClick={() => setActiveNav('#services')} className={activNav === '#services' ? 'active' : ''}><RiServiceLine /></a>
