@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-admin-dashboard/portfolio/static/css/main.e152ed93.css",
+    "main.js": "/react-admin-dashboard/portfolio/static/js/main.a7559afd.js",
+    "static/media/dubossary.jpg": "/react-admin-dashboard/portfolio/static/media/dubossary.c941f91f8b00c4c8c3d5.jpg",
+    "static/media/me.png": "/react-admin-dashboard/portfolio/static/media/me.48c03b17ad91d0f2a5a1.png",
+    "static/media/me-about.jpg": "/react-admin-dashboard/portfolio/static/media/me-about.1206ab75ceae2a9b10fe.jpg",
+    "static/media/project3.jpg": "/react-admin-dashboard/portfolio/static/media/project3.fa5c9af291ad815033f4.jpg",
+    "static/media/DashBoard.jpg": "/react-admin-dashboard/portfolio/static/media/DashBoard.60c342d55e0e82cbaf83.jpg",
+    "static/media/project2.jpg": "/react-admin-dashboard/portfolio/static/media/project2.f4cd20fbe0b49c81e37c.jpg",
+    "static/media/project5.jpg": "/react-admin-dashboard/portfolio/static/media/project5.1078c15b712191a2fffd.jpg",
+    "static/media/exportcar.jpg": "/react-admin-dashboard/portfolio/static/media/exportcar.408debe4fcd6e895d9d4.jpg",
+    "static/media/project4.jpg": "/react-admin-dashboard/portfolio/static/media/project4.999ef0f9fe3a24401693.jpg",
+    "static/media/project8.jpg": "/react-admin-dashboard/portfolio/static/media/project8.5be80b4c69f2421ea6ae.jpg",
+    "static/media/project1.jpg": "/react-admin-dashboard/portfolio/static/media/project1.b6b2513fef0e03ab3aa6.jpg",
+    "static/media/project6.jpg": "/react-admin-dashboard/portfolio/static/media/project6.9b9a94f94c7a156ba934.jpg",
+    "static/media/project7.jpg": "/react-admin-dashboard/portfolio/static/media/project7.a7c84139dee266018b40.jpg",
+    "index.html": "/react-admin-dashboard/portfolio/index.html",
+    "main.e152ed93.css.map": "/react-admin-dashboard/portfolio/static/css/main.e152ed93.css.map",
+    "main.a7559afd.js.map": "/react-admin-dashboard/portfolio/static/js/main.a7559afd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e152ed93.css",
+    "static/js/main.a7559afd.js"
+  ]
+}
