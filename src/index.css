@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -28,7 +29,7 @@ html {
 	display: none;
 }
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Manrope', sans-serif;
 	background-color: var(--color-bg);
 	background-image: url('./assets/bg-texture.png');
 	color: var(--color-white);

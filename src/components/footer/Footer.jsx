@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './footer.css'
 import { FaInstagram, FaGithub, FaTwitter } from 'react-icons/fa'
 const Footer = () => {
+	const { t } = useTranslation()
 	return (
 		<footer>
 			<a href='#home' className='footer__logo'>
@@ -9,21 +11,21 @@ const Footer = () => {
 			</a>
 			<ul className='permalinks'>
 				<li>
-					<a href='#home'>Home</a>
+					<a href='#home'>{t('footerHome')}</a>
 				</li>
 				<li>
-					<a href='#about'>About</a>
+					<a href='#about'>{t('footerAbout')}</a>
 				</li>
 				<li>
-					<a href='#experience'>Experience</a>
+					<a href='#experience'>{t('footerExperience')}</a>
 				</li>
 				{/*<li><a href='#services'>Services</a></li>*/}
 				<li>
-					<a href='#portfolio'>Portfolio</a>
+					<a href='#portfolio'>{t('footerPortfolio')}</a>
 				</li>
 				{/*<li><a href='#hobbies'>Hobbies</a></li>*/}
 				<li>
-					<a href='#contact'>Contact</a>
+					<a href='#contact'>{t('footerContact')}</a>
 				</li>
 			</ul>
 			<div className='footer__socials'>
@@ -46,7 +48,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className='footer__copyrights'>
-				<small>&copy; Mititel Nikolai. 2022.</small>
+				<small>&copy; {t('footerCopy')}</small>
 			</div>
 		</footer>
 	)

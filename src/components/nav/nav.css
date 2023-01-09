@@ -1,30 +1,91 @@
 nav {
-  background: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
-  display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
+	background: rgba(0, 0, 0, 0.3);
+	width: max-content;
+	display: block;
+	padding: 0.7rem 1.7rem;
+	z-index: 2;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 2rem;
+	display: flex;
+	gap: 0.8rem;
+	border-radius: 3rem;
+	backdrop-filter: blur(15px);
+}
+nav button {
+	background: transparent;
+	padding: 0.9rem;
+	border-radius: 50%;
+	display: flex;
+	color: var(--color-light);
+	font-size: 1.1rem;
 }
 nav a {
-  background: transparent;
-  padding: 0.9rem;
-  border-radius: 50%;
-  display: flex;
-  color: var(--color-light);
-  font-size: 1.1rem;
+	background: transparent;
+	padding: 0.9rem;
+	border-radius: 50%;
+	display: flex;
+	color: var(--color-light);
+	font-size: 1.1rem;
 }
 nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.3);
+}
+nav button:hover {
+	background: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
 }
 nav a.active {
-  background: var(--color-primary);
-  color: var(--color-bg);
+	background: var(--color-primary);
+	color: var(--color-bg);
+}
+nav button.active {
+	background: var(--color-primary);
+	color: var(--color-bg);
+}
+
+/*LANGUAGE*/
+
+.topmenu:after {
+	display: table;
+	clear: both;
+}
+.topmenu > li {
+	float: right;
+	position: relative;
+}
+.topmenu li button:hover {
+	color: #fff;
+}
+.submenu-link:after {
+	color: inherit;
+	margin-left: 10px;
+}
+.submenu {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	z-index: 5;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: 0.5s ease-in-out;
+}
+.submenu button {
+	margin-bottom: 0.2rem;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+	color: var(--color-primary);
+	text-align: left;
+	padding: 0.75rem;
+	font-size: 0.9rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.submenu li:last-child button {
+	border-bottom: none;
+	margin-bottom: 1.2rem;
+}
+.topmenu > li:hover .submenu {
+	opacity: 1;
+	transform: scaleX(1);
 }
