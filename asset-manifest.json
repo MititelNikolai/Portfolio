@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.965e5a51.css",
-    "main.js": "/portfolio/static/js/main.daffc058.js",
-    "static/media/dubossary.jpg": "/portfolio/static/media/dubossary.c941f91f8b00c4c8c3d5.jpg",
+    "main.css": "/portfolio/static/css/main.2e7c444b.css",
+    "main.js": "/portfolio/static/js/main.8bb0ce2f.js",
+    "static/media/dalle_clone_main.png": "/portfolio/static/media/dalle_clone_main.5a7c41e23b69006f9bde.png",
     "static/media/me.png": "/portfolio/static/media/me.48c03b17ad91d0f2a5a1.png",
+    "static/media/dubossary.jpg": "/portfolio/static/media/dubossary.fe8afe5ced4aa55d69cc.jpg",
     "static/media/me-about.jpg": "/portfolio/static/media/me-about.1206ab75ceae2a9b10fe.jpg",
+    "static/media/project_threejs_ai.png": "/portfolio/static/media/project_threejs_ai.10846cdfd0484f1a9e66.png",
     "static/media/project3.jpg": "/portfolio/static/media/project3.fa5c9af291ad815033f4.jpg",
     "static/media/DashBoard.jpg": "/portfolio/static/media/DashBoard.60c342d55e0e82cbaf83.jpg",
     "static/media/project2.jpg": "/portfolio/static/media/project2.f4cd20fbe0b49c81e37c.jpg",
+    "static/media/js.jpg": "/portfolio/static/media/js.42c48a95f100bf96c8c6.jpg",
     "static/media/project5.jpg": "/portfolio/static/media/project5.1078c15b712191a2fffd.jpg",
+    "static/media/react.jpg": "/portfolio/static/media/react.cd58ce578276b53bae2b.jpg",
     "static/media/exportcar.jpg": "/portfolio/static/media/exportcar.408debe4fcd6e895d9d4.jpg",
+    "static/media/css.jpg": "/portfolio/static/media/css.71a87c21ed5fd05e1df0.jpg",
     "static/media/project4.jpg": "/portfolio/static/media/project4.999ef0f9fe3a24401693.jpg",
     "static/media/project8.jpg": "/portfolio/static/media/project8.5be80b4c69f2421ea6ae.jpg",
+    "static/media/basket.png": "/portfolio/static/media/basket.461898e7e81794e257b5.png",
     "static/media/project1.jpg": "/portfolio/static/media/project1.b6b2513fef0e03ab3aa6.jpg",
     "static/media/project6.jpg": "/portfolio/static/media/project6.9b9a94f94c7a156ba934.jpg",
+    "static/media/avangard-motors.jpg": "/portfolio/static/media/avangard-motors.0bad128a4a0577c8ae25.jpg",
     "static/media/project7.jpg": "/portfolio/static/media/project7.a7c84139dee266018b40.jpg",
     "index.html": "/portfolio/index.html",
-    "main.965e5a51.css.map": "/portfolio/static/css/main.965e5a51.css.map",
-    "main.daffc058.js.map": "/portfolio/static/js/main.daffc058.js.map"
+    "main.2e7c444b.css.map": "/portfolio/static/css/main.2e7c444b.css.map",
+    "main.8bb0ce2f.js.map": "/portfolio/static/js/main.8bb0ce2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.965e5a51.css",
-    "static/js/main.daffc058.js"
+    "static/css/main.2e7c444b.css",
+    "static/js/main.8bb0ce2f.js"
   ]
 }
