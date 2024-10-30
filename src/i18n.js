@@ -1,119 +1,173 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
 const resources = {
-	en: {
-		translation: {
-			/*Home*/
-			subTitleHome: "Hello I'm",
-			titleHome: 'Mititel Nikolai',
-			vacancy: 'Junior React Developer',
+  ru: {
+    translation: {
+      /*Home*/
+      subTitleHome: "Привет, меня зовут",
+      titleHome: "Митител Николай",
+      vacancy: "Junior React Разработчик",
+      talk: "Связаться со мной",
+      /* About */
+      subTitleAbout: "Давайте знакомиться",
+      titleAbout: "Обо мне",
+      description:
+        "Привет! Меня зовут Николай, я веб-разработчик из Дубоссар, Молдова. Начав с программирования на Visual Basic в школе, я развивался через Java в университете и затем увлёкся веб-разработкой, создав свои первые сайты на WordPress. Со временем освоил HTML, CSS, JavaScript и React, завершив курсы на Scrimba и Udemy, включая мастер-классы по JavaScript, CSS и React с Redux. В данный момент я ищу работу на позицию Junior React-разработчика.",
+      experience: "Опыт",
+      clients: "Клиенты",
+      projects: "Проекты",
+      experienceText: "1+ года работы",
+      clientsText: "3",
+      projectsText: "3 завершенных",
+      /*Experience*/
+      subTitleExperience: "Какие у меня навыки",
+      titleExperience: "Мой опыт",
+      /*Card */
+      cardFrontendText: "Frontend разработка",
+      cardSubtextExp: "Опытный",
+      cardSubtextInt: "Средний",
+      cardBackendText: "Backend разработка",
+      /*Portfolio*/
+      subTitlePortfolio: "Мои недавние работы",
+      titlePortfolio: "Портфолио",
+      wordPress: "Сайты на WordPress",
+      certificate: "Мои сертификаты",
+      demo: "Демо",
+      live: "Смотреть",
+      /*Contact*/
+      subTitleContact: "Связаться",
+      titleContact: "Свяжитесь со мной",
+      email: "E-mail",
+      message: "Отправить сообщение",
+      /*Contact.form*/
+      yourName: "Ваше полное имя",
+      yourEmail: "Ваш E-mail",
+      yourMessage: "Ваше сообщение",
+      success: "Ваше сообщение было отправлено",
+      /*Footer*/
+      footerHome: "Домой",
+      footerAbout: "Обо мне",
+      footerExperience: "Опыт",
+      footerPortfolio: "Портфолио",
+      footerContact: "Связь",
+      footerCopy: "Митител Николай. 2024.",
+    },
+  },
+  en: {
+    translation: {
+      /*Home*/
+      subTitleHome: "Hello, my name is",
+      titleHome: "Mititel Nikolay",
+      vacancy: "Junior React Developer",
+      talk: "Contact me",
+      /* About */
+      subTitleAbout: "Let's get acquainted",
+      titleAbout: "About me",
+      description:
+        "Hello! My name is Nikolay, a web developer from Dubossary, Moldova. I began programming with Visual Basic in school, progressed to Java in university, and eventually became interested in web development. I created my first websites on WordPress and later expanded my skills to HTML, CSS, JavaScript, and React, completing courses on Scrimba and Udemy, including masterclasses in JavaScript, CSS, and React with Redux. Currently, I'm seeking a Junior React Developer position.",
+      experience: "Experience",
+      clients: "Clients",
+      projects: "Projects",
+      experienceText: "1+ year of work",
+      clientsText: "3",
+      projectsText: "3 completed",
+      /*Experience*/
+      subTitleExperience: "My skill set",
+      titleExperience: "My experience",
+      /*Card */
+      cardFrontendText: "Frontend Development",
+      cardSubtextExp: "Experienced",
+      cardSubtextInt: "Intermediate",
+      cardBackendText: "Backend Development",
+      /*Portfolio*/
+      subTitlePortfolio: "My recent works",
+      titlePortfolio: "Portfolio",
+      wordPress: "WordPress sites",
+      certificate: "My certificates",
+      demo: "Demo",
+      live: "Live",
+      /*Contact*/
+      subTitleContact: "Contact",
+      titleContact: "Get in touch with me",
+      email: "E-mail",
+      message: "Send message",
+      /*Contact.form*/
+      yourName: "Your full name",
+      yourEmail: "Your E-mail",
+      yourMessage: "Your message",
+      success: "Your message has been sent",
+      /*Footer*/
+      footerHome: "Home",
+      footerAbout: "About me",
+      footerExperience: "Experience",
+      footerPortfolio: "Portfolio",
+      footerContact: "Contact",
+      footerCopy: "Mititel Nikolay. 2024.",
+    },
+  },
 
-			talk: "Let's Talk",
-			/* About */
-			subTitleAbout: 'Get to know',
-			titleAbout: 'About Me',
-			description:
-				'Hello! My name is Nikolai. I am from the small town of Dubossary, which is located in Moldova. I have been programming since the 9th grade. The path began with Visual Basic, solved ordinary school problems in computer science classes, then began to travel to the city Olympiads. Then, in the 11th grade, he began to study Java on his own, in which he wrote simple programs at the university to solve applied problems in the strength of materials. Then I got interested in web development. Started with WordPress, built my first ExportCar project and fell in love with web development. Then I made a website for my city also on Wordpress. At the same time, I began to study more HTML/CSS/JavaScript, and then started learning React on a course from Bob Ziroll on the Scrimba platform. Now I am looking for a job for the position of Junior React it is faster and more efficient to develop in a team of like-minded people while benefiting society',
-			experience: 'Experience',
-			clients: 'Clients',
-			projects: 'Projects',
-			experienceText: '1+ Years Working',
-			clientsText: '2+ Worldwide',
-			projectsText: '2 Completed',
-			/*Experience*/
-			subTitleExperience: 'What skill I have',
-			titleExperience: 'My Experience',
-			/*Card */
-			cardFrontendText: 'Frontend Development',
-			cardSubtextExp: 'Experienced',
-			cardSubtextInt: 'Intermediate',
-			cardBackendText: 'Backend Development',
-			/*Portfolio*/
-			subTitlePortfolio: 'My Recent Work',
-			titlePortfolio: 'Portfolio',
-			wordPress: 'WordPress Sites',
-			demo: 'Demo',
-			live: 'Live',
-			/*Contact*/
-			subTitleContact: 'Get  In Touch',
-			titleContact: 'Contact Me',
-			email: 'E-mail',
-			message: 'Send a message',
-			/*Contact.form*/
-			yourName: 'Your Full Name',
-			yourEmail: 'Your E-mail',
-			yourMessage: 'Your Message',
-			success: 'Your message has been sent',
-			/*Footer*/
-			footerHome: 'Home',
-			footerAbout: 'About',
-			footerExperience: 'Experience',
-			footerPortfolio: 'Portfolio',
-			footerContact: 'Contact',
-			footerCopy: 'Mititel Nikolai. 2023.',
-		},
-	},
-	ru: {
-		translation: {
-			/*Home*/
-			subTitleHome: 'Привет, меня зовут',
-			titleHome: 'Митител Николай',
-			vacancy: 'Junior React Разработчик',
-			talk: 'Связаться со мной',
-			/* About */
-			subTitleAbout: 'Давайте знакомиться',
-			titleAbout: 'Обо мне',
-			description:
-				'Привет! Меня зовут Николай. Я из небольшого города Дубоссары, который находится в Молдове. Я программирую с 9 класса. Путь начался с Visual Basic, решал обычные школьные задачи на уроках информатики, потом стал ездить на городские олимпиады. Затем, в 11 классе, начал самостоятельно изучать Java, на которой писал в университете простые программы для решения прикладных задач по предмету сопротивление материалов. Потом я увлекся веб-разработкой. Начал с WordPress, построил свой первый проект ExportCar и влюбился в веб-разработку. Потом я сделал сайт для своего города тоже на Wordpress. В то же время я стал больше изучать HTML/CSS/JavaScript, а затем начал изучать React на курсе Боба Зиролла на платформе Scrimba. Сейчас ищу работу на должность Junior React, чтобы быстрее и эффективнее развиваться в команде единомышленников принося пользу обществу',
-			experience: 'Опыт',
-			clients: 'Клиенты',
-			projects: 'Проекты',
-			experienceText: '1+ года работы',
-			clientsText: '2+ по всему миру',
-			projectsText: '2 завершенных',
-			/*Experience*/
-			subTitleExperience: 'Какие у меня навыки',
-			titleExperience: 'Мой опыт',
-			/*Card */
-			cardFrontendText: 'Frontend разработка',
-			cardSubtextExp: 'Опытный',
-			cardSubtextInt: 'Средний',
-			cardBackendText: 'Backend разработка',
-			/*Portfolio*/
-			subTitlePortfolio: 'Мои недавние работы',
-			titlePortfolio: 'Портфолио',
-			wordPress: 'Сайты на WordPress',
-			demo: 'Демо',
-			live: 'Смотреть',
-			/*Contact*/
-			subTitleContact: 'Связаться',
-			titleContact: 'Свяжитесь со мной',
-			email: 'E-mail',
-			message: 'Отправить сообщение',
-			/*Contact.form*/
-			yourName: 'Ваше полное имя',
-			yourEmail: 'Ваш E-mail',
-			yourMessage: 'Ваше сообщение',
-			success: 'Ваше сообщение было отправлено',
-			/*Footer*/
-			footerHome: 'Домой',
-			footerAbout: 'Обо мне',
-			footerExperience: 'Опыт',
-			footerPortfolio: 'Портфолио',
-			footerContact: 'Связь',
-			footerCopy: 'Митител Николай. 2023.',
-		},
-	},
-}
+  ro: {
+    translation: {
+      /*Home*/
+      subTitleHome: "Salut, mă numesc",
+      titleHome: "Mititel Nicolai",
+      vacancy: "Junior React Developer",
+      talk: "Contactează-mă",
+      /* About */
+      subTitleAbout: "Să facem cunoștință",
+      titleAbout: "Despre mine",
+      description:
+        "Salut! Mă numesc Nicolai și sunt dezvoltator web din Dubăsari, Moldova. Am început cu Visual Basic în școală, am progresat la Java la universitate și ulterior m-am orientat către dezvoltarea web. Am creat primele mele site-uri pe WordPress și am continuat să-mi extind competențele la HTML, CSS, JavaScript și React, finalizând cursuri pe Scrimba și Udemy, inclusiv masterclass-uri în JavaScript, CSS și React cu Redux. În prezent, caut o poziție de Junior React Developer.",
+      experience: "Experiență",
+      clients: "Clienți",
+      projects: "Proiecte",
+      experienceText: "Peste 1 an de lucru",
+      clientsText: "3",
+      projectsText: "3 finalizate",
+      /*Experience*/
+      subTitleExperience: "Setul meu de abilități",
+      titleExperience: "Experiența mea",
+      /*Card */
+      cardFrontendText: "Dezvoltare Frontend",
+      cardSubtextExp: "Experimentat",
+      cardSubtextInt: "Intermediar",
+      cardBackendText: "Dezvoltare Backend",
+      /*Portfolio*/
+      subTitlePortfolio: "Proiectele mele recente",
+      titlePortfolio: "Portofoliu",
+      wordPress: "Site-uri WordPress",
+      certificate: "Certificatele mele",
+      demo: "Demo",
+      live: "Vizualizează",
+      /*Contact*/
+      subTitleContact: "Contact",
+      titleContact: "Contactează-mă",
+      email: "E-mail",
+      message: "Trimite mesaj",
+      /*Contact.form*/
+      yourName: "Numele complet",
+      yourEmail: "E-mail",
+      yourMessage: "Mesajul tău",
+      success: "Mesajul tău a fost trimis",
+      /*Footer*/
+      footerHome: "Acasă",
+      footerAbout: "Despre mine",
+      footerExperience: "Experiență",
+      footerPortfolio: "Portofoliu",
+      footerContact: "Contact",
+      footerCopy: "Mititel Nicolai. 2024.",
+    },
+  },
+};
 
 i18n.use(initReactI18next).init({
-	resources,
-	lng: 'en',
+  resources,
+  lng: "en",
 
-	interpolation: {
-		escapeValue: false,
-	},
-})
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
-export default i18n
+export default i18n;
